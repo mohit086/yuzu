@@ -1,5 +1,6 @@
 import yt_dlp
 
-def main(url):
+def download_file(params):
+
     with yt_dlp.YoutubeDL() as ydl:
-        ydl.download(url)
+        ydl.download(params['url'])
